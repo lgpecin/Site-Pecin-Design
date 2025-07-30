@@ -2,23 +2,15 @@
 ---
 import Layout from '../../components/Layout.astro';
 ---
-<Layout title="Contato — Pecin Design">
-  <section class="container-max py-12">
-    <h1 class="text-3xl font-bold">Contato</h1>
-    <p class="text-zinc-700 mt-2">Vamos conversar sobre seu projeto.</p>
-
-    <div class="grid md:grid-cols-2 gap-8 mt-8">
-      <form action="https://formspree.io/f/SEU_ENDPOINT" method="POST" class="space-y-4">
-        <input type="text" name="nome" required placeholder="Seu nome" class="border px-3 py-2 rounded w-full">
-        <input type="email" name="email" required placeholder="Seu email" class="border px-3 py-2 rounded w-full">
-        <textarea name="mensagem" required placeholder="Mensagem" class="border px-3 py-2 rounded w-full h-32"></textarea>
-        <button type="submit" class="border px-4 py-2 rounded border-primary text-primary hover:bg-primary hover:text-white">Enviar</button>
-      </form>
-
-      <div class="text-zinc-700">
-        <p><strong>Email:</strong> <a class="underline" href="mailto:lgpecin@gmail.com">lgpecin@gmail.com</a></p>
-        <p class="mt-2"><strong>WhatsApp:</strong> <a class="underline" href="https://wa.me/5544984213640" target="_blank" rel="noopener">+55 44 98421-3640</a></p>
-      </div>
-    </div>
+<Layout>
+  <section class="max-w-4xl mx-auto px-4 py-16 text-center">
+    <h1 class="text-3xl font-bold mb-6">Contato</h1>
+    <p class="text-gray-700 mb-8">Vamos conversar sobre seu projeto.</p>
+    <form action="https://formspree.io/f/SEU_ENDPOINT" method="POST" class="grid gap-4 max-w-md mx-auto">
+      <input type="text" name="nome" placeholder="Seu nome" required class="border rounded px-3 py-2">
+      <input type="email" name="email" placeholder="Seu email" required class="border rounded px-3 py-2">
+      <textarea name="mensagem" placeholder="Sua mensagem" required class="border rounded px-3 py-2 h-32"></textarea>
+      <button type="submit" class="bg-primary text-dark font-semibold py-2 rounded hover:scale-105 transition-transform">Enviar</button>
+    </form>
   </section>
 </Layout>
