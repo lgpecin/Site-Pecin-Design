@@ -1,0 +1,46 @@
+
+---
+import Layout from '../../../components/Layout.astro';
+const title = "Nome do Case — Pecin Design";
+const description = "Estudo de caso com contexto, desafio, processo, entrega e resultado.";
+---
+<Layout {title} {description}>
+  <article class="container-max py-12 prose prose-zinc max-w-none">
+    <h1>Nome do Case</h1>
+    <p class="lead">Cliente X — Identidade visual (2025)</p>
+
+    <h2>Contexto</h2>
+    <p>Descreva o cliente, público e objetivos.</p>
+
+    <h2>Desafio</h2>
+    <p>Explique o problema de comunicação/negócio que o projeto precisava resolver.</p>
+
+    <h2>Processo</h2>
+    <p>Pesquisa, conceito, esboços, decisões de design.</p>
+
+    <div class="my-6 rounded overflow-hidden aspect-video">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID?rel=0&mute=1"
+        title="Case Motion"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="w-full h-full">
+      </iframe>
+    </div>
+
+    <h2>Entrega</h2>
+    <p>Liste as peças entregues (estáticas, vídeo, motion).</p>
+
+    <h2>Resultado</h2>
+    <p>Métricas, depoimentos, comparativos antes/depois.</p>
+
+    <h3>Ficha técnica</h3>
+    <ul>
+      <li>Papel: Direção de Arte, Motion Design</li>
+      <li>Ferramentas: After Effects, Premiere, Illustrator</li>
+      <li>Prazo: 4 semanas</li>
+    </ul>
+  </article>
+</Layout>

@@ -1,0 +1,30 @@
+
+---
+import Layout from '../components/Layout.astro';
+---
+<Layout title="Pecin Design — Diretor de Arte & Motion">
+  <section class="container-max py-16">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+      Diretor de Arte & Motion Designer
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-zinc-700">
+      Identidade visual, campanhas e motion design com foco em resultado e narrativa.
+    </p>
+    <a href="/contato/" class="inline-block mt-6 border px-4 py-2 rounded border-primary text-primary hover:bg-primary hover:text-white">
+      Fale comigo
+    </a>
+  </section>
+
+  <section class="container-max pb-16" aria-labelledby="ultimos-trabalhos">
+    <h2 id="ultimos-trabalhos" class="text-xl font-semibold mb-6">Últimos trabalhos</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a class="group block" href="/projetos/nome-do-case/">
+        <div class="aspect-video bg-zinc-200 overflow-hidden rounded">
+          <img src="/assets/img/case-cover.webp" alt="Capa do projeto Nome do Case" class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy">
+        </div>
+        <div class="mt-3 text-sm text-zinc-600">Identidade • 2025</div>
+        <div class="font-medium">Nome do Case</div>
+      </a>
+    </div>
+  </section>
+</Layout>

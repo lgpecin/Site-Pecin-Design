@@ -1,0 +1,46 @@
+
+---
+const { title = "Pecin Design — Portfólio", description = "Direção de arte, identidade visual, campanhas e motion design.", image = "/assets/img/og-cover.jpg" } = Astro.props;
+---
+<!doctype html>
+<html lang="pt-br" class="bg-zinc-50 text-zinc-900 font-sans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <script type="application/ld+json">{JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Leonardo Pecin",
+      "url": "https://leonardopecin.com.br",
+      "jobTitle": "Diretor de Arte & Motion Designer",
+      "email": "mailto:lgpecin@gmail.com",
+      "telephone": "+5544984213640"
+    })}</script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="container-max py-6 flex items-center justify-between">
+      <a href="/" class="font-semibold text-xl text-primary">Pecin Design</a>
+      <nav class="space-x-6">
+        <a href="/projetos/" class="hover:underline">Projetos</a>
+        <a href="/sobre/" class="hover:underline">Sobre</a>
+        <a href="/contato/" class="hover:underline">Contato</a>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <slot />
+    </main>
+    <footer class="container-max py-10 text-sm text-zinc-600">
+      © 2025 Pecin Design · Disponível para projetos · <a href="/cv.pdf" class="underline">CV</a>
+    </footer>
+  </body>
+</html>
