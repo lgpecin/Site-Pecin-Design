@@ -2,18 +2,16 @@
 ---
 import Layout from '../../components/Layout.astro';
 ---
-<Layout title="Projetos — Pecin Design">
-  <section class="container-max py-12">
-    <h1 class="text-3xl font-bold">Projetos</h1>
-    <p class="text-zinc-700 mt-2">Seleção de identidades, campanhas e motion.</p>
-
-    <div class="grid md:grid-cols-3 gap-6 mt-8">
-      <a class="group block" href="/projetos/nome-do-case/">
-        <div class="aspect-video bg-zinc-200 overflow-hidden rounded">
-          <img src="/assets/img/case-cover.webp" alt="Capa do projeto Nome do Case" class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy">
+<Layout>
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold mb-6 text-center">Projetos</h1>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <a href="/projetos/nome-do-case/" class="card">
+        <img src="/assets/img/case-cover.webp" alt="Case exemplo">
+        <div class="card-content">
+          <h3 class="font-semibold text-lg">Nome do Case</h3>
+          <p class="text-sm text-gray-600">Identidade Visual • 2025</p>
         </div>
-        <div class="mt-3 text-sm text-zinc-600">Identidade • 2025</div>
-        <div class="font-medium">Nome do Case</div>
       </a>
     </div>
   </section>
