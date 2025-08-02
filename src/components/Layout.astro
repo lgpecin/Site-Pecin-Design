@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
-const { title = "Pecin Design — Portfólio", description = "Direção de arte, identidade visual, campanhas e motion design." } = Astro.props;
+const {
+  title = "Pecin Design — Portfólio",
+  description = "Direção de arte, identidade visual, campanhas e motion design."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="pt-br" class="font-sans">
@@ -9,8 +12,8 @@ const { title = "Pecin Design — Portfólio", description = "Direção de arte,
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body class="flex flex-col min-h-screen">
     <header class="bg-dark text-white py-4">
